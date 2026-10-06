@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>album ai đồ Minh Anh 💕</title>
+<meta name="description" content="Album ảnh kỷ niệm điện tử đáng yêu – ảnh được lưu riêng tư ngay trên thiết bị của bạn.">
+<meta name="theme-color" content="#ffeef5">
+<meta property="og:title" content="album ai đồ Minh Anh 💕">
+<meta property="og:description" content="Album ảnh kỷ niệm điện tử đáng yêu. Mỗi người có album riêng, ảnh lưu ngay trên máy bạn.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💕%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#fffafc;--bg2:#ffeef5;--card:#ffffff;--ink:#7a3a55;--soft:#b97a95;--pink:#ff7eb0;--pink2:#ff5c9d;--line:#ffb8d3;--shadow:rgba(214,92,150,.2);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#2b1624;--bg2:#3a1b2f;--card:#44243a;--ink:#ffd9e8;--soft:#e7a6c2;--line:#7a3a5d;--shadow:rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg1:#2b1624;--bg2:#3a1b2f;--card:#44243a;--ink:#ffd9e8;--soft:#e7a6c2;--line:#7a3a5d;--shadow:rgba(0,0,0,.4)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{height:100%;margin:0}
+body{background:radial-gradient(circle at 20% 10%,var(--bg1),var(--bg2));color:var(--ink);font-family:'Quicksand','Nunito',system-ui,sans-serif;font-weight:500;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.floaties{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.floaties span{position:absolute;bottom:-40px;opacity:.55;animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg)}}
+h1{font-family:'Pacifico',cursive,serif;font-weight:400;margin:0}
+.book{position:relative;width:min(92vw,400px);perspective:1200px}
+.page{background:var(--card);border-radius:26px;padding:22px 20px 18px;box-shadow:0 14px 34px var(--shadow);border:3px dashed var(--line);text-align:center;min-height:min(70vh,560px);max-height:calc(100vh - 150px);overflow-y:auto;display:flex;flex-direction:column;align-items:center;justify-content:safe center;gap:12px;transform-origin:left center}
+.out{animation:out .35s ease-in forwards}
+.in{animation:inn .45s ease-out}
+@keyframes out{to{transform:rotateY(-80deg);opacity:0}}
+@keyframes inn{from{transform:rotateY(75deg);opacity:0}to{transform:none;opacity:1}}
+.cover h1{font-size:2rem;line-height:1.3;color:var(--pink2)}
+.cover .big{font-size:4.2rem;animation:beat 1.2s infinite}
+@keyframes beat{50%{transform:scale(1.15)}}
+.btn{border:0;background:var(--pink);color:#fff;font:700 1rem 'Quicksand',system-ui,sans-serif;padding:12px 24px;border-radius:999px;cursor:pointer;box-shadow:0 5px 0 var(--pink2);transition:transform .1s}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--pink2)}
+.btn.ghost{background:transparent;color:var(--soft);box-shadow:none;padding:6px 12px;font-size:.85rem}
+.polaroid{background:#fff;padding:12px 12px 8px;border-radius:12px;box-shadow:0 8px 20px var(--shadow);transform:rotate(-2deg);width:100%;position:relative}
+.polaroid.alt{transform:rotate(2deg)}
+.polaroid::before{content:"";position:absolute;top:-12px;left:50%;width:84px;height:24px;margin-left:-42px;background:rgba(255,160,200,.65);transform:rotate(-4deg);border-radius:4px}
+.frame{aspect-ratio:1/1;border-radius:8px;background:#ffeef5;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.drop{cursor:pointer;color:var(--pink2);font-weight:700;text-align:center;padding:14px;width:100%;height:100%;border:0;background:none;font-family:inherit;font-size:1rem}
+.drop .plus{display:block;font-size:3.4rem;line-height:1;animation:beat 1.4s infinite}
+.cap{width:100%;border:0;border-bottom:2px dotted var(--line);background:transparent;text-align:center;font:700 1rem 'Quicksand',system-ui,sans-serif;color:#7a3a55;padding:8px 4px;outline:none}
+.cap::placeholder{color:#d9a3bb}
+.date{font-size:.78rem;color:var(--soft)}
+.nav{display:flex;align-items:center;gap:14px;margin-top:16px}
+.nav button{width:46px;height:46px;border-radius:50%;border:0;background:var(--card);color:var(--pink2);font-size:1.3rem;cursor:pointer;box-shadow:0 4px 12px var(--shadow)}
+.nav button:disabled{opacity:.35;cursor:default}
+.count{font-weight:700;min-width:96px;text-align:center;font-size:.95rem}
+.ask{font-family:'Itim','Quicksand',cursive,system-ui,sans-serif;font-size:1.5rem;color:var(--pink2);margin:0}
+.hello{font-weight:700;color:var(--soft)}
+.tools{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.hint{font-size:.8rem;color:var(--soft);margin:10px 0 0;text-align:center;min-height:1.2em}
+.pop{position:fixed;font-size:1.6rem;pointer-events:none;animation:pop 1s ease-out forwards}
+@keyframes pop{to{transform:translateY(-90px) scale(1.4);opacity:0}}
+
+.soc{width:100%;text-align:left}
+.stats{display:flex;justify-content:space-between;font-size:.8rem;color:var(--soft);min-height:1.3em;padding:0 4px}
+.acts{display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:4px;position:relative}
+.act{flex:1;background:none;border:0;padding:10px 2px;font:700 .85rem 'Quicksand',system-ui,sans-serif;color:var(--soft);cursor:pointer;border-radius:12px;transition:transform .1s,background .15s;-webkit-user-select:none;user-select:none}
+.act:hover{background:var(--bg2)}
+.act:active{transform:scale(.93)}
+.act.on{color:var(--pink2)}
+.picker{position:absolute;bottom:48px;left:2px;background:var(--card);border-radius:999px;box-shadow:0 8px 24px var(--shadow);padding:4px 8px;display:flex;gap:2px;z-index:5;animation:inn .25s ease-out}
+.picker button{border:0;background:none;font-size:1.75rem;cursor:pointer;transition:transform .12s;padding:2px}
+.picker button:hover{transform:scale(1.35) translateY(-5px)}
+.cms{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.cm{display:flex;gap:8px;align-items:flex-start}
+.av{font-size:1.5rem;line-height:1}
+.bub{background:var(--bg2);border-radius:16px;padding:6px 12px;font-size:.88rem;color:var(--ink);word-break:break-word;flex:1}
+.bub b{display:block;font-size:.76rem}
+.bub small{display:block;color:var(--soft);font-size:.7rem;margin-top:2px}
+.bub .x{float:right;border:0;background:none;color:var(--soft);cursor:pointer;font-size:.8rem}
+.cin{display:flex;gap:6px;margin-top:10px}
+.cin input{flex:1;min-width:0;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;font:500 .9rem 'Quicksand',system-ui,sans-serif;outline:none}
+.cin button{border:0;background:var(--pink);color:#fff;border-radius:999px;padding:0 16px;font:700 .9rem 'Quicksand',system-ui,sans-serif;cursor:pointer}
+.dt{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;color:var(--soft);font-weight:700}
+.dt input{border:2px dotted var(--line);background:transparent;color:var(--soft);border-radius:999px;padding:5px 12px;font:700 .85rem 'Quicksand',system-ui,sans-serif;outline:none;cursor:pointer}
+.dt input:focus{border-color:var(--pink)}
+.music{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);right:12px;width:46px;height:46px;border-radius:50%;border:0;background:var(--card);box-shadow:0 4px 12px var(--shadow);font-size:1.4rem;cursor:pointer;z-index:20}
+.music.spin span{display:inline-block;animation:spin 3s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="floaties" id="fl"></div>
+<audio id="bgm" src="nhac.mp3" loop preload="auto"></audio>
+<button class="music" id="music" aria-label="Bật/tắt nhạc"><span>🎵</span></button>
+<div class="book" id="book"></div>
+<div class="nav" id="nav" hidden>
+  <button id="prev" aria-label="Trang trước">‹</button>
+  <div class="count" id="count"></div>
+  <button id="next" aria-label="Trang sau">›</button>
+</div>
+<p class="hint" id="hint"></p>
+<input type="file" id="file" accept="image/*" multiple hidden>
+<input type="file" id="backup" accept="application/json,.json" hidden>
+
+<script>
+(function(){
+  var name='', askName=false, openCm=false, photos=[], idx=-1, db=null, mem=false, title='album ai đồ Minh Anh';
+  var book=document.getElementById('book'), nav=document.getElementById('nav');
+  var backup=document.getElementById('backup'), file=document.getElementById('file'), hint=document.getElementById('hint');
+
+  var fl=document.getElementById('fl'), em=['💗','🌸','✨','💕','🎀','⭐'];
+  for(var i=0;i<14;i++){var s=document.createElement('span');s.textContent=em[i%em.length];
+    s.style.left=(Math.random()*95)+'%';s.style.fontSize=(14+Math.random()*18)+'px';
+    s.style.animationDuration=(12+Math.random()*14)+'s';s.style.animationDelay=(-Math.random()*20)+'s';fl.appendChild(s);}
+
+  function openDB(cb){
+    try{
+      var r=indexedDB.open('album-ky-niem-v1',1);
+      r.onupgradeneeded=function(){r.result.createObjectStore('kv')};
+      r.onsuccess=function(){db=r.result;cb()};
+      r.onerror=function(){mem=true;cb()};
+    }catch(e){mem=true;cb()}
+  }
+  function load(cb){
+    if(mem||!db)return cb();
+    try{var st=db.transaction('kv').objectStore('kv'),t=st.get('title'),n=st.get('name'),g=st.get('photos');
+      t.onsuccess=function(){if(t.result)title=t.result};
+      n.onsuccess=function(){if(n.result)name=n.result};
+      g.onsuccess=function(){photos=g.result||[];cb()};g.onerror=function(){cb()};}catch(e){cb()}
+  }
+  function save(){
+    if(mem||!db)return;
+    try{var st=db.transaction('kv','readwrite').objectStore('kv');st.put(photos,'photos');st.put(title,'title');st.put(name,'name')}catch(e){}
+  }
+
+  function shrink(f,cb){
+    var rd=new FileReader();
+    rd.onload=function(){
+      var im=new Image();
+      im.onload=function(){
+        var m=1000,w=im.width,h=im.height,k=Math.min(1,m/Math.max(w,h));
+        var c=document.createElement('canvas');c.width=Math.round(w*k);c.height=Math.round(h*k);
+        c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+        cb(c.toDataURL('image/jpeg',.82));
+      };
+      im.onerror=function(){cb(null)};
+      im.src=rd.result;
+    };
+    rd.onerror=function(){cb(null)};
+    rd.readAsDataURL(f);
+  }
+
+  function pad(n){return (n<10?'0':'')+n}
+  function todayISO(){var d=new Date();return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+  function isoOf(p){
+    if(/^\d{4}-\d{2}-\d{2}$/.test(p.iso||''))return p.iso;
+    var m=/(\d+) tháng (\d+),? (\d{4})/.exec(p.date||'');
+    return m?m[3]+'-'+pad(+m[2])+'-'+pad(+m[1]):todayISO();
+  }
+  function esc(t){return String(t||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+  function pageHTML(){
+    if(!name||askName){
+      return '<div class="page cover"><div class="big">🐰</div><h1>Xin chào!</h1>'+
+        '<p class="ask">ai đồ nhập tên nhó</p>'+
+        '<input class="cap" id="nm" maxlength="20" placeholder="Nhập tên của bạn…" value="'+esc(name)+'" autocomplete="nickname">'+
+        '<button class="btn" id="nmgo">Vào album 💕</button>'+
+        (name?'<button class="btn ghost" id="nmx">← Quay lại</button>':'')+'</div>';
+    }
+    if(idx<0){
+      return '<div class="page cover"><div class="big">💕</div><h1>'+esc(title)+'</h1>'+
+        '<div class="hello">Xin chào, '+esc(name)+' 🌸</div>'+
+        '<button class="btn" id="open">Mở album 🎀</button>'+
+        '<div class="tools"><button class="btn ghost" id="ren">✏️ Đổi tên album</button><button class="btn ghost" id="who">🙋 Tên của tôi</button><button class="btn ghost" id="exp">💾 Sao lưu</button><button class="btn ghost" id="imp">📂 Khôi phục</button></div>'+
+        (photos.length?'<div class="date">Đã có '+photos.length+' kỷ niệm 🌸</div>':'')+'</div>';
+    }
+    var p=photos[idx], alt=idx%2?' alt':'';
+    if(!p){
+      return '<div class="page"><div class="polaroid'+alt+'"><div class="frame"><button class="drop" id="add">'+
+        '<span class="plus">＋</span>Thêm một bức ảnh mới nhé 📸</button></div></div>'+
+        '<div class="date">Trang '+(idx+1)+' đang chờ kỷ niệm mới 💭</div></div>';
+    }
+    return '<div class="page"><div class="polaroid'+alt+'"><div class="frame"><img src="'+p.src+'" alt="kỷ niệm"></div>'+
+      '<input class="cap" id="cap" maxlength="60" placeholder="Tiêu đề…" value="'+esc(p.cap)+'"></div>'+
+      '<label class="dt">📅 <input type="date" id="dt" value="'+isoOf(p)+'"></label>'+
+      '<div class="soc" id="soc"></div>'+
+      '<button class="btn ghost" id="del">🗑️ Xóa ảnh này</button></div>';
+  }
+
+  function render(dir){
+    function draw(){
+      book.innerHTML=pageHTML();
+      book.firstChild.classList.add('in');
+      nav.hidden=idx<0||!name||askName;
+      document.getElementById('count').textContent='Trang '+(idx+1)+' / '+(photos.length+1);
+      document.getElementById('prev').disabled=idx<=-1;
+      document.getElementById('next').disabled=idx>=photos.length;
+      var o=document.getElementById('open'); if(o)o.onclick=function(){go(0)};
+      var nm=document.getElementById('nm');
+      if(nm){
+        var ok=function(){var v=nm.value.trim().slice(0,20);if(!v){nm.focus();return}name=v;askName=false;save();render(1)};
+        document.getElementById('nmgo').onclick=ok;
+        nm.onkeydown=function(e){if(e.key==='Enter'){e.preventDefault();ok()}};
+        var nx=document.getElementById('nmx'); if(nx)nx.onclick=function(){askName=false;render(1)};
+        setTimeout(function(){nm.focus()},60);
+      }
+      var wh=document.getElementById('who'); if(wh)wh.onclick=function(){askName=true;render(1)};
+      var rn=document.getElementById('ren'); if(rn)rn.onclick=function(){
+        var t=prompt('Đặt tên cho album của bạn:',title);
+        if(t&&t.trim()){title=t.trim().slice(0,40);document.title=title+' 💕';save();render(0)}};
+      var ex=document.getElementById('exp'); if(ex)ex.onclick=exportAlbum;
+      var im=document.getElementById('imp'); if(im)im.onclick=function(){backup.click()};
+      var a=document.getElementById('add'); if(a)a.onclick=function(){file.click()};
+      var c=document.getElementById('cap'); if(c)c.oninput=function(){photos[idx].cap=c.value;save()};
+      var dt=document.getElementById('dt'); if(dt)dt.onchange=function(){
+        if(!dt.value)return;var q=photos[idx],m=dt.value.split('-');
+        q.iso=dt.value;q.date=new Date(+m[0],+m[1]-1,+m[2]).toLocaleDateString('vi-VN',{day:'numeric',month:'long',year:'numeric'});save()};
+      var d=document.getElementById('del'); if(d)d.onclick=function(){
+        if(confirm('Xóa bức ảnh này khỏi album?')){photos.splice(idx,1);save();idx=Math.min(idx,photos.length);render(1)}};
+      var so=document.getElementById('soc'); if(so)renderSoc(so);
+      hint.textContent=idx>=0&&!photos[idx]?'Chọn ảnh xong, album sẽ tự lật sang trang mới 💫':'';
+    }
+    var old=book.firstChild;
+    if(dir&&old){old.classList.add('out');setTimeout(draw,330)}else draw();
+  }
+  function go(n){openCm=false;idx=Math.max(-1,Math.min(photos.length,n));render(1)}
+
+  document.getElementById('prev').onclick=function(){go(idx-1)};
+  document.getElementById('next').onclick=function(){go(idx+1)};
+
+  function burst(){
+    var e=['💖','🌸','✨','🎀','💕'];
+    for(var i=0;i<8;i++){(function(i){
+      var s=document.createElement('div');s.className='pop';s.textContent=e[i%e.length];
+      s.style.left=(25+Math.random()*50)+'vw';s.style.top=(35+Math.random()*25)+'vh';s.style.animationDelay=(i*.05)+'s';
+      document.body.appendChild(s);setTimeout(function(){s.remove()},1300);})(i);}
+  }
+
+  file.onchange=function(){
+    var list=Array.prototype.slice.call(file.files||[]);file.value='';
+    if(!list.length)return;
+    hint.textContent='Đang dán ảnh vào album… 🧸';
+    var n=list.length,done=0,res=[];
+    var ds=new Date().toLocaleDateString('vi-VN',{day:'numeric',month:'long',year:'numeric'});
+    list.forEach(function(f,i){shrink(f,function(src){
+      if(src)res[i]={src:src,cap:'',date:ds,iso:todayISO()};
+      if(++done===n){
+        res.filter(Boolean).forEach(function(p){photos.push(p)});
+        save();burst();
+        idx=photos.length;
+        setTimeout(function(){render(1)},500);
+      }});});
+  };
+
+  function exportAlbum(){
+    if(!photos.length){hint.textContent='Album còn trống, thêm ảnh rồi hãy sao lưu nhé 🌸';return}
+    var blob=new Blob([JSON.stringify({v:1,title:title,photos:photos})],{type:'application/json'});
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+    a.download='album-ky-niem-'+new Date().toISOString().slice(0,10)+'.json';
+    document.body.appendChild(a);a.click();a.remove();
+    setTimeout(function(){URL.revokeObjectURL(a.href)},2000);
+    hint.textContent='Đã tải file sao lưu về máy 💾';
+  }
+  backup.onchange=function(){
+    var f=backup.files&&backup.files[0];backup.value='';if(!f)return;
+    var rd=new FileReader();
+    rd.onload=function(){
+      try{
+        var d=JSON.parse(rd.result),ok=(d.photos||[]).filter(function(p){return p&&typeof p.src==='string'&&p.src.indexOf('data:image/')===0})
+          .map(function(p){return {src:p.src,cap:String(p.cap||'').slice(0,60),date:String(p.date||''),iso:/^\d{4}-\d{2}-\d{2}$/.test(p.iso||'')?p.iso:'',react:typeof p.react==='string'?p.react.slice(0,4):'',cm:(Array.isArray(p.cm)?p.cm:[]).filter(function(c){return c&&typeof c.t==='string'}).map(function(c){return {t:c.t.slice(0,200),d:+c.d||0,n:String(c.n||'').slice(0,20)}})}});
+        if(!ok.length)throw 0;
+        photos=photos.concat(ok);if(d.title&&photos.length===ok.length)title=String(d.title).slice(0,40);
+        save();render(0);hint.textContent='Đã khôi phục '+ok.length+' ảnh 🎀';
+      }catch(e){hint.textContent='File sao lưu không hợp lệ 😢'}
+    };
+    rd.readAsText(f);
+  };
+
+  var R={'👍':'Thích','❤️':'Yêu thích','🥰':'Thương thương','😆':'Haha','😮':'Wow','😢':'Buồn','😡':'Phẫn nộ'};
+  function floatEmoji(e){
+    for(var i=0;i<6;i++){(function(i){
+      var s=document.createElement('div');s.className='pop';s.textContent=e;
+      s.style.left=(35+Math.random()*30)+'vw';s.style.top=(45+Math.random()*15)+'vh';s.style.animationDelay=(i*.06)+'s';
+      document.body.appendChild(s);setTimeout(function(){s.remove()},1300);})(i);}
+  }
+  function dataToFile(src){
+    var parts=src.split(','),bin=atob(parts[1]),u=new Uint8Array(bin.length);
+    for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);
+    return new File([u],'ky-niem.jpg',{type:'image/jpeg'});
+  }
+  function sharePhoto(p){
+    try{
+      var f=dataToFile(p.src);
+      if(navigator.canShare&&navigator.canShare({files:[f]})){
+        navigator.share({files:[f],title:title,text:p.cap||''}).catch(function(){});return;
+      }
+    }catch(e){}
+    var a=document.createElement('a');a.href=p.src;a.download='ky-niem.jpg';
+    document.body.appendChild(a);a.click();a.remove();
+    hint.textContent='Đã tải ảnh về máy để bạn gửi cho mọi người 💌';
+  }
+  function renderSoc(el){
+    var p=photos[idx];if(!p)return;
+    var cms=p.cm||[];
+    var h='<div class="stats"><span>'+(p.react?p.react+' '+esc(name||'Bạn'):'')+'</span><span>'+(cms.length?cms.length+' bình luận':'')+'</span></div>'+
+      '<div class="acts"><button class="act'+(p.react?' on':'')+'" id="like">'+(p.react?p.react+' '+R[p.react]:'👍 Thích')+'</button>'+
+      '<button class="act'+(openCm?' on':'')+'" id="cmt">💬 Bình luận</button>'+
+      '<button class="act" id="shr">↗️ Chia sẻ</button></div>';
+    if(openCm){
+      h+='<div class="cms">'+cms.map(function(c,i){
+        return '<div class="cm"><span class="av">🐰</span><div class="bub"><button class="x" data-i="'+i+'" aria-label="Xóa">✕</button><b>'+esc(c.n||name||'Bạn')+'</b>'+esc(c.t)+
+          '<small>'+new Date(c.d).toLocaleString('vi-VN',{hour:'2-digit',minute:'2-digit',day:'numeric',month:'numeric'})+'</small></div></div>';
+      }).join('')+'</div>'+
+      '<div class="cin"><input id="cin" maxlength="200" placeholder="Viết bình luận… 💕"><button id="csend">Gửi</button></div>';
+    }
+    el.innerHTML=h;
+    var acts=el.querySelector('.acts'),like=document.getElementById('like'),pk=null,tm=null,long=false;
+    function hidePk(){clearTimeout(tm);if(pk){pk.remove();pk=null}}
+    function showPk(){
+      if(pk)return;pk=document.createElement('div');pk.className='picker';
+      Object.keys(R).forEach(function(e){var b=document.createElement('button');b.textContent=e;b.title=R[e];
+        b.onclick=function(ev){ev.stopPropagation();p.react=e;save();floatEmoji(e);hidePk();renderSoc(el)};pk.appendChild(b)});
+      acts.appendChild(pk);
+    }
+    like.onmouseenter=function(){tm=setTimeout(showPk,350)};
+    acts.onmouseleave=hidePk;
+    like.onpointerdown=function(ev){long=false;if(ev.pointerType!=='mouse')tm=setTimeout(function(){long=true;showPk()},450)};
+    like.onpointerup=function(){clearTimeout(tm)};
+    like.oncontextmenu=function(ev){ev.preventDefault()};
+    like.onclick=function(){
+      if(long){long=false;return}
+      if(pk){hidePk();return}
+      if(p.react){p.react=''}else{p.react='👍';floatEmoji('👍')}
+      save();renderSoc(el);
+    };
+    document.getElementById('cmt').onclick=function(){openCm=!openCm;renderSoc(el);if(openCm){var i=document.getElementById('cin');if(i)i.focus()}};
+    document.getElementById('shr').onclick=function(){sharePhoto(p)};
+    if(openCm){
+      var inp=document.getElementById('cin');
+      function send(){
+        var t=inp.value.trim();if(!t)return;
+        (p.cm=p.cm||[]).push({t:t,d:Date.now(),n:name});save();floatEmoji('💕');renderSoc(el);
+        var n=document.getElementById('cin');if(n)n.focus();
+      }
+      document.getElementById('csend').onclick=send;
+      inp.onkeydown=function(e){if(e.key==='Enter'){e.preventDefault();send()}};
+      Array.prototype.forEach.call(el.querySelectorAll('.x'),function(b){
+        b.onclick=function(){p.cm.splice(+b.getAttribute('data-i'),1);save();renderSoc(el)}});
+    }
+  }
+
+  document.addEventListener('keydown',function(e){
+    if(e.target.tagName==='INPUT')return;
+    if(e.key==='ArrowRight')go(idx+1);
+    if(e.key==='ArrowLeft')go(idx-1);
+  });
+
+  try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(e){}
+  // background music: browsers only allow sound after a tap, so start on first interaction
+  var bgm=document.getElementById('bgm'), mbtn=document.getElementById('music'), wantMusic=true;
+  try{wantMusic=localStorage.getItem('album-music')!=='off'}catch(e){}
+  bgm.volume=.6;
+  function paint(){var on=!bgm.paused;mbtn.classList.toggle('spin',on);mbtn.firstChild.textContent=on?'🎵':'🔇'}
+  function playMusic(){if(!wantMusic)return;var r=bgm.play();if(r&&r.then)r.then(paint,function(){});paint()}
+  function firstTap(){playMusic();document.removeEventListener('pointerdown',firstTap)}
+  document.addEventListener('pointerdown',firstTap);
+  mbtn.onclick=function(ev){
+    ev.stopPropagation();
+    if(bgm.paused){wantMusic=true;bgm.play().then(paint,function(){})}else{wantMusic=false;bgm.pause()}
+    try{localStorage.setItem('album-music',wantMusic?'on':'off')}catch(e){}
+    paint();
+  };
+  bgm.addEventListener('play',paint);bgm.addEventListener('pause',paint);paint();
+
+  openDB(function(){load(function(){document.title=title+' 💕';render(0)})});
+})();
+</script>
+</body>
+</html>
